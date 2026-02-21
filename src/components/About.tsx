@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
 
 const highlights = [
-  "Deep expertise across cloud, security, and data",
-  "Proven track record with enterprise clients",
+  "UK-based specialist technology consultancy",
   "Vendor-agnostic, client-first approach",
   "Agile delivery with measurable outcomes",
+  "Trusted by startups and scaling businesses alike",
 ];
 
 const About = () => {

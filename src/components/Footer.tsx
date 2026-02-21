@@ -18,7 +18,7 @@ const Footer = () => {
             <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
           </div>
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} W1 Technology. All rights reserved.
+            © {new Date().getFullYear()} W1 Technology Limited. All rights reserved.
           </p>
         </div>
       </div>
