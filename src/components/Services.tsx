@@ -1,42 +1,18 @@
 import { motion } from "framer-motion";
-import { Cloud, Shield, BarChart3, Code, MonitorSmartphone, Lightbulb } from "lucide-react";
+import { Lightbulb, SearchCheck } from "lucide-react";
 
 const services = [
   {
-    icon: Cloud,
-    title: "Cloud & Infrastructure",
-    description:
-      "Cloud migration, architecture design, and managed services to modernise your infrastructure.",
-  },
-  {
-    icon: Shield,
-    title: "Cybersecurity",
-    description:
-      "Comprehensive security assessments, compliance frameworks, and threat management.",
-  },
-  {
-    icon: BarChart3,
-    title: "Data & Analytics",
-    description:
-      "Data strategy, business intelligence, and advanced analytics to unlock actionable insights.",
-  },
-  {
-    icon: Code,
-    title: "Software Development",
-    description:
-      "Custom application development, API integrations, and legacy system modernisation.",
-  },
-  {
-    icon: MonitorSmartphone,
-    title: "Digital Transformation",
-    description:
-      "End-to-end digital strategy and implementation to future-proof your organisation.",
-  },
-  {
     icon: Lightbulb,
-    title: "IT Strategy & Advisory",
+    title: "Consulting & Advisory",
     description:
-      "CTO-level guidance, technology roadmaps, and vendor selection to align IT with business goals.",
+      "We work with your teams to understand your business and provide consultation and advice on specific technology topics or strategy formation. Our experts embed alongside your people to deliver actionable guidance.",
+  },
+  {
+    icon: SearchCheck,
+    title: "Technical Due Diligence",
+    description:
+      "For business leaders or investors considering partnerships or investments in a technology company, we provide thorough technical due diligence assessments and reports to aid in your considerations.",
   },
 ];
 
@@ -63,7 +39,7 @@ const Services = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
