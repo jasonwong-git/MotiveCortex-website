@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Lightbulb, SearchCheck, UserCog } from "lucide-react";
+import { Lightbulb, SearchCheck, UserCog, Cpu } from "lucide-react";
 
 const services = [
   {
@@ -19,6 +19,12 @@ const services = [
     title: "CTO / CxO-As-A-Service",
     description:
       "For start-ups and businesses on the scale-up pathway that require guidance from an experienced technology professional without the overhead of a full-time CTO / CxO. We provide technical leadership, strategic advice, and act as a sounding board when you need it — then hand back to your internal team to execute.",
+  },
+  {
+    icon: Cpu,
+    title: "Design & Development",
+    description:
+      "Electronics and embedded systems design and development — from initial requirements through to prototyping and production scale-up. Our industry experience spans automotive systems, EVs / electric vehicle technology, EV charging and CPO infrastructure, and medical systems.",
   },
 ];
 
@@ -45,7 +51,7 @@ const Services = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
