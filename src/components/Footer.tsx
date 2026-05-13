@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="flex items-center gap-3">
             <img src={logo} alt="Motive Cortex" className="h-8 w-8 rounded-lg" />
             <span className="font-display text-lg font-bold text-foreground">
-              Motive Cortex
+              Motive <span className="text-gradient">Cortex</span>
             </span>
           </div>
           <div className="flex items-center gap-8 text-sm text-muted-foreground">
