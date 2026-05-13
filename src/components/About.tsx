@@ -26,7 +26,7 @@ const About = () => {
               Your Trusted Technology Partner
             </h2>
             <p className="mt-6 text-muted-foreground text-lg leading-relaxed">
-              W1 Technology is a specialist consultancy that bridges the gap
+              Motive Cortex is a specialist consultancy that bridges the gap
               between business ambition and technical execution. We work with
               organisations of all sizes — from ambitious startups to established
               enterprises — delivering practical, results-driven technology
