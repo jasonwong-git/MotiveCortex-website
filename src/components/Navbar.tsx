@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import logo from "@/assets/w1-logo.png";
+import logo from "@/assets/motive-cortex-mark.png";
 
 const navItems = [
   { label: "Home", href: "#home" },
@@ -18,9 +18,9 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           <a href="#home" className="flex items-center gap-3">
-            <img src={logo} alt="W1 Technology" className="h-9 w-9 rounded-lg" />
+            <img src={logo} alt="Motive Cortex" className="h-9 w-9 rounded-lg" />
             <span className="font-display text-xl font-bold tracking-tight text-foreground">
-              W1 <span className="text-gradient">Technology</span>
+              Motive <span className="text-gradient">Cortex</span>
             </span>
           </a>
 

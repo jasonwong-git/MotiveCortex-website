@@ -34,7 +34,7 @@ const Contact = () => {
               className="space-y-5"
               onSubmit={(e) => {
                 e.preventDefault();
-                window.location.href = "mailto:hello@w1technology.com";
+                window.location.href = "mailto:hello@motivecortex.com";
               }}
             >
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
