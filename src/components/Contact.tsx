@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, ArrowRight } from "lucide-react";
+import { Mail } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -28,45 +28,15 @@ const Contact = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: 0.2 }}
-            className="mt-10 card-gradient rounded-xl border border-border p-8 md:p-10"
+            className="mt-10"
           >
-            <form
-              className="space-y-5"
-              onSubmit={(e) => {
-                e.preventDefault();
-                window.location.href = "mailto:hello@motivecortex.com";
-              }}
+            <a
+              href="mailto:hello@motivecortex.com"
+              className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-semibold text-base hover:opacity-90 transition-opacity glow"
             >
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                <input
-                  type="text"
-                  placeholder="Your Name"
-                  className="w-full px-4 py-3 rounded-lg bg-background border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition"
-                />
-                <input
-                  type="email"
-                  placeholder="Email Address"
-                  className="w-full px-4 py-3 rounded-lg bg-background border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition"
-                />
-              </div>
-              <input
-                type="text"
-                placeholder="Subject"
-                className="w-full px-4 py-3 rounded-lg bg-background border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition"
-              />
-              <textarea
-                placeholder="Tell us about your project..."
-                rows={4}
-                className="w-full px-4 py-3 rounded-lg bg-background border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition resize-none"
-              />
-              <button
-                type="submit"
-                className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 rounded-lg bg-primary text-primary-foreground font-semibold text-base hover:opacity-90 transition-opacity glow"
-              >
-                Send Message
-                <ArrowRight size={18} />
-              </button>
-            </form>
+              <Mail size={20} />
+              hello@motivecortex.com
+            </a>
           </motion.div>
         </motion.div>
       </div>
