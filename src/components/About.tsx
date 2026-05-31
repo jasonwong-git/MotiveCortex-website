@@ -10,7 +10,7 @@ const highlights = [
 
 const About = () => {
   return (
-    <section id="about" className="py-20 md:py-32 bg-secondary/30">
+    <section id="about" className="py-20 bg-secondary/30 md:py-[50px]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div
@@ -26,7 +26,7 @@ const About = () => {
               Your Trusted Technology Partner
             </h2>
             <p className="mt-6 text-muted-foreground text-lg leading-relaxed">
-              W1 Technology is a specialist consultancy that bridges the gap
+              Motive Cortex is a specialist consultancy that bridges the gap
               between business ambition and technical execution. We work with
               organisations of all sizes — from ambitious startups to established
               enterprises — delivering practical, results-driven technology

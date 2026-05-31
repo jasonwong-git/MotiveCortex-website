@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
+      className="relative min-h-screen flex items-start justify-center overflow-hidden pt-20 md:pt-24"
     >
       {/* Background image */}
       <div
@@ -15,7 +15,7 @@ const Hero = () => {
       />
       <div className="absolute inset-0 bg-background/60" />
 
-      <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
+      <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="max-w-3xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -65,7 +65,7 @@ const Hero = () => {
               href="#about"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg border border-border text-foreground font-semibold text-base hover:bg-secondary transition-colors"
             >
-              Learn More
+              About Motive Cortex
             </a>
           </motion.div>
         </div>

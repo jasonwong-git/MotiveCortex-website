@@ -1,4 +1,4 @@
-import logo from "@/assets/w1-logo.png";
+import logo from "@/assets/motive-cortex-mark.png";
 
 const Footer = () => {
   return (
@@ -6,9 +6,9 @@ const Footer = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <img src={logo} alt="W1 Technology" className="h-8 w-8 rounded-lg" />
+            <img src={logo} alt="Motive Cortex" className="h-8 w-8 rounded-lg" />
             <span className="font-display text-lg font-bold text-foreground">
-              W1 Technology
+              Motive <span className="text-gradient">Cortex</span>
             </span>
           </div>
           <div className="flex items-center gap-8 text-sm text-muted-foreground">
@@ -18,7 +18,7 @@ const Footer = () => {
             <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
           </div>
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} W1 Technology Limited. All rights reserved.
+            © {new Date().getFullYear()} Motive Cortex Ltd. All rights reserved.
           </p>
         </div>
       </div>

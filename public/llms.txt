@@ -1,0 +1,9 @@
+# Motive Cortex
+
+> UK technology consultancy delivering consulting, technical due diligence, CTO-as-a-Service, and embedded systems design.
+
+Motive Cortex (W1 Technology Limited) partners with startups and scale-ups to ship pragmatic technology strategy and engineering leadership. Contact: hello@motivecortex.com.
+
+## Pages
+
+- [Home](/): Overview of Motive Cortex services, approach, and contact details.
