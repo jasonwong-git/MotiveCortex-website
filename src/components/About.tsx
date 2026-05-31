@@ -10,7 +10,7 @@ const highlights = [
 
 const About = () => {
   return (
-    <section id="about" className="py-20 md:py-32 bg-secondary/30">
+    <section id="about" className="py-20 md:py-[80px] bg-secondary/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div
