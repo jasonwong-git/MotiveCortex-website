@@ -23,8 +23,13 @@ const services = [
   {
     icon: Cpu,
     title: "Design & Development",
-    description:
-      "Electronics and embedded systems design and development — from initial requirements through to prototyping and production scale-up. Our industry experience spans automotive systems, EVs / electric vehicle technology, EV charging and CPO infrastructure, and medical systems.",
+    description: (
+      <>
+        Electronics and embedded systems design and development — from initial requirements through to prototyping and production scale-up. Our industry experience spans automotive systems, EVs / electric vehicle technology, EV charging and CPO infrastructure, and medical systems.
+        <br /><br />
+        From simple circuits to Edge AI systems.
+      </>
+    ),
   },
 ];
 
