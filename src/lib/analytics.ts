@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 
 declare global {
@@ -24,23 +24,27 @@ export function initAnalytics() {
   };
 
   window.gtag("js", new Date());
-  window.gtag("config", measurementId, { send_page_view: false });
+  window.gtag("config", measurementId);
 }
 
 export function trackPageView(path: string) {
   if (!measurementId || typeof window.gtag !== "function") return;
 
-  window.gtag("event", "page_view", {
-    page_path: path,
-  });
+  window.gtag("config", measurementId, { page_path: path });
 }
 
 export function AnalyticsTracker() {
   const location = useLocation();
+  const path = `${location.pathname}${location.search}`;
+  const isInitialLoad = useRef(true);
 
   useEffect(() => {
-    trackPageView(`${location.pathname}${location.search}`);
-  }, [location]);
+    if (isInitialLoad.current) {
+      isInitialLoad.current = false;
+      return;
+    }
+    trackPageView(path);
+  }, [path]);
 
   return null;
 }
