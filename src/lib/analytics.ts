@@ -11,7 +11,12 @@ declare global {
 const measurementId = import.meta.env.VITE_GA_MEASUREMENT_ID;
 
 export function initAnalytics() {
-  if (!measurementId) return;
+  if (!measurementId) {
+    if (import.meta.env.DEV) {
+      console.warn("VITE_GA_MEASUREMENT_ID is not defined. Google Analytics will not track events.");
+    }
+    return;
+  }
 
   const script = document.createElement("script");
   script.async = true;
@@ -19,8 +24,9 @@ export function initAnalytics() {
   document.head.appendChild(script);
 
   window.dataLayer = window.dataLayer || [];
-  window.gtag = function gtag(...args: unknown[]) {
-    window.dataLayer.push(args);
+  window.gtag = function gtag() {
+    // eslint-disable-next-line prefer-rest-params
+    window.dataLayer.push(arguments);
   };
 
   window.gtag("js", new Date());
